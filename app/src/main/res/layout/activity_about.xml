@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include  android:id="@+id/abouttoolbarlayout"
+        layout="@layout/app_bar_layout"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="false"
+        android:layout_below="@id/abouttoolbarlayout">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".AboutActivity">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="149dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/logo_lowres"
+                android:background="@drawable/rounded_button_dark"/>
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_gravity="center_horizontal"
+                android:text="FoodShare™ is an ease-of-life mobile phone application created by a team of 6 Singapore University of Technology and design students for their end-term project. With FoodShare™, the students aim to help make the act of order pooling for food an easy and convenient one, hoping to bring together the local community for a common cause: eating great food at a cheaper price. FoodShare™ is an ever-growing and improving product, and the FoodShare™ team hopes that you, the user, will have a great time using this service!"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:layout_below="@id/logo"/>
+
+            <View
+                android:layout_width="400dp"
+                android:layout_height="2dp"
+                android:background="@color/DarkerOrange"
+                android:layout_below="@id/about"
+                android:layout_margin="20dp"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

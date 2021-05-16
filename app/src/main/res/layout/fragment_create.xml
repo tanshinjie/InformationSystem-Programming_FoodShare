@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/create_restaurant_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant:"
+            android:textSize="16dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/restaurantSpinner"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/rounded_button_dark"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/create_pickup_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_restaurant_input"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick up address:"
+            android:textSize="16dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/pickupAddText"
+            android:layout_width="190dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_button_dark"
+            android:text="Enter Pickup Address"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/create_order_by_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_pickup_input"
+
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order by:"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="75dp"
+            />
+
+        <TextView
+            android:id="@+id/orderTimeButton"
+            android:layout_width="190dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="Enter your order time"
+            android:textColorHint="@color/black"
+            android:background="@drawable/rounded_button_dark"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_fee_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/create_order_by_input"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Fee:"
+            android:textSize="16dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="1dp"
+            />
+
+        <EditText
+            android:id="@+id/deliveryFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16dp"
+            android:hint="Type Here"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_remarks_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/create_fee_input"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks:"
+            android:textSize="16dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="1dp"
+            />
+
+        <EditText
+            android:id="@+id/remarksEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16dp"
+            android:hint="Type Here"
+            android:maxLength="20"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create"
+        android:background="@drawable/rounded_button_dark"
+        android:layout_below="@id/create_remarks_input"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        />
+</RelativeLayout>
